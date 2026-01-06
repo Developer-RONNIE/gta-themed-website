@@ -64,7 +64,7 @@ function App()  {
     {showContent && (
       <div className='main w-full'>
           <div className='landing w-full h-screen bg-black'>
-            <div className='imagesdiv relative w-full h-screen'>
+            <div className='imagesdiv relative overflow-hidden w-full h-screen'>
               <img 
                 className='absolute top-0 left-0 w-full h-full object-cover' 
                 src="/sky.png"
@@ -75,6 +75,9 @@ function App()  {
                 src="/bg.png"
                 alt=""
               />
+
+              <img className='absolute top-[25%] left-0 translate-x-1/2' 
+              src="/girlbg.png" alt="" />
             </div>
           </div>
       </div>
