@@ -30,6 +30,7 @@ function App()  {
     });
   });
   return (
+    <>
     <div className="svg flex items-center justify-center fixed top-0 left-0 z-[100] w-full h-screen overflow-hidden bg-[#000]">
       <svg viewBox="0 0 800 600" preserveAspectRatio='xMidYMid slice'>
         <defs>
@@ -60,6 +61,25 @@ function App()  {
 
       </svg>
     </div>
+    {showContent && (
+      <div className='main w-full'>
+          <div className='landing w-full h-screen bg-black'>
+            <div className='imagesdiv relative w-full h-screen'>
+              <img 
+                className='absolute top-0 left-0 w-full h-full object-cover' 
+                src="/sky.png"
+                alt=""
+              />
+              <img 
+                className='absolute top-0 left-0 w-full h-full object-cover' 
+                src="/bg.png"
+                alt=""
+              />
+            </div>
+          </div>
+      </div>
+    )}
+    </>
   )
 }
 
